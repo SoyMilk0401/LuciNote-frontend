@@ -1,0 +1,66 @@
+/* src/pages/DeepResearch.css */
+
+.deep-container {
+  display: flex;
+}
+
+.deep-content {
+  margin-left: 200px;
+  padding: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.deep-content h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  height: 400px; /* 폼 높이 조정, 필요시 값 변경 */
+}
+
+.input-section label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #888; /* 회색 글씨 */
+}
+
+.input-section select {
+  width: 300px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.execute-button {
+  margin-top: auto;
+  margin-top: 30px;
+  padding: 12px 20px;
+  width: 300px;         /* select와 동일한 가로 길이 */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.result-box {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  white-space: pre-line;
+}
+
+.result-section label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #888; /* 회색 글씨 */
+}

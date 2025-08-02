@@ -1,0 +1,32 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.bottom-icon {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
