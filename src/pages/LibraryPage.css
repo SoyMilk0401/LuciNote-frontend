@@ -1,0 +1,53 @@
+/* src/pages/LibraryPage.css */
+
+.library-container {
+  display: flex;
+}
+
+.library-content {
+  margin-left: 200px; /* 사이드바 너비 */
+  padding: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.calendar-toggle {
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.calendar-wrapper {
+  margin-bottom: 20px;
+}
+
+/* 문서 목록을 좌→우, 위→아래로 정렬하는 그리드 */
+.document-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.document-box {
+  height: 120px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #333;
+  word-break: break-word;
+}
