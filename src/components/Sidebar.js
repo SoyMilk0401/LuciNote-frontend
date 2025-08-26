@@ -1,9 +1,17 @@
-// src/components/Sidebar.js
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Sidebar.css'; // 선택적으로 스타일 분리
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import './Sidebar.css';
 
 function Sidebar() {
+  const { token, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/login');
+  };
+
   return (
     <div className="sidebar">
       <nav>
@@ -16,7 +24,11 @@ function Sidebar() {
         </ul>
       </nav>
       <div className="bottom-icon">
-        <Link to="/login">🔐 로그인</Link>
+        {token ? (
+          <button onClick={handleLogout} className="logout-button">🔐 로그아웃</button>
+        ) : (
+          <Link to="/login">🔐 로그인</Link>
+        )}
       </div>
     </div>
   );
